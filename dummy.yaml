@@ -1,41 +1,18 @@
-# Sample YAML File with Dummy Data
-app:
-  name: DummyApp
-  version: 1.0.0
-  enabled: true
-
-users:
-  - id: 1
-    name: Alice Johnson
-    email: alice@example.com
-    roles:
-      - admin
-      - editor
-  - id: 2
-    name: Bob Smith
-    email: bob@example.com
-    roles:
-      - viewer
-
-settings:
-  theme: dark
-  notifications: true
-  max_login_attempts: 5
-
-database:
-  host: localhost
-  port: 5432
-  user: db_user
-  password: secret
-
-logs:
-  level: info
-  path: /var/logs/app.log
-
-features:
-  analytics: true
-  auto_backup: false
-  languages:
-    - English
-    - Spanish
-    - French
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: dummy-service
+  description: A dummy service for demonstration purposes
+  annotations:
+    github.com/project-slug: my-org/dummy-service
+  tags:
+    - backend
+    - nodejs
+spec:
+  type: service
+  owner: team-dummy
+  lifecycle: production
+  providesApis:
+    - dummy-api
+  consumesApis:
+    - external-api
