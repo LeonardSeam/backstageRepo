@@ -4,7 +4,7 @@ metadata:
   name: Service-with-docs
   description: service for using with documents
   annotation:
-    backstage.io/techdoc-ref: dir:.
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: website
   lifecycle: production
