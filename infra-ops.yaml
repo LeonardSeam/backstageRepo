@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: infrastructure-operations
+  description: The division handling cloud infrastructure, deployments, and reliability.
+spec:
+  type: division
+  parent: software-development
+  children:
+    - devops-team
+    - sre-team
