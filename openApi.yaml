@@ -10,24 +10,5 @@ spec:
   type: openapi
   lifecycle: production
   owner: infrastructure-operations #product-development
-  definition: |
-    openapi: 3.0.0
-    info:
-      title: Dummy API
-      version: 1.0.0
-      description: This is a dummy API for testing purposes.
-    paths:
-      /hello:
-        get:
-          summary: Returns a greeting message
-          responses:
-            "200":
-              description: A successful response
-              content:
-                application/json:
-                  schema:
-                    type: object
-                    properties:
-                      message:
-                        type: string
-                        example: "Hello, world!"
+  definition: 
+    $file: https://gist.githubusercontent.com/lenage/08964335de9064540c8c335fb849c5da/raw/6d63e3546897356882ed7e30cd48891a24e2b354/feature.swagger.json
