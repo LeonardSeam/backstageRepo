@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: product-development
+  description: The division responsible for developing and maintaining software products.
+spec:
+  type: division
+  parent: software-development
+  children:
+    - frontend-team
+    - backend-team
