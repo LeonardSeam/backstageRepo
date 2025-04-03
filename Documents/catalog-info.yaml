@@ -3,7 +3,7 @@ kind: Component
 metadata:
   name: Service-with-docs
   description: service for using with documents
-  annotation:
+  annotations:
     backstage.io/techdocs-ref: dir:.
 spec:
   type: website
