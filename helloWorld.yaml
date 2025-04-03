@@ -9,7 +9,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: Team-Engineering
+  owner: product-development
   definition: |
     openapi: 3.0.0
     info:
