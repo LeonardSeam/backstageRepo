@@ -9,11 +9,3 @@ spec:
   type: service
   lifecycle: production
   owner: artist-relations-team
-  system: artist-engagement-portal
-  dependsOn:
-    - resource:default/artists-db
-  dependencyOf:
-    - component:default/artist-web-lookup
-  providesApis:
-    - artist-api
-    
