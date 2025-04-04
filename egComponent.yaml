@@ -12,7 +12,7 @@ spec:
   system: artist-engagement-portal
   dependsOn:
     - resource:default/artists-db
-  dependencyOf:
-    - component:default/artist-web-lookup
+#  dependencyOf: #optional field
+#    - component:default/artist-web-lookup
   providesApis:
     - artist-api
