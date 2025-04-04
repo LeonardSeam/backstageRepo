@@ -1,3 +1,4 @@
+# do allow 'Domain' type to be added in your backend app-config.yaml
 apiVersion: backstage.io/v1alpha1
 kind: Domain
 metadata:
