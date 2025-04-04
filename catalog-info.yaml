@@ -5,6 +5,7 @@ metadata:
   description: Example of creating a tecDocument
   annotations:
     backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: LeonardSeam/backstageRepo
 spec:
   type: service
   lifecycle: production
